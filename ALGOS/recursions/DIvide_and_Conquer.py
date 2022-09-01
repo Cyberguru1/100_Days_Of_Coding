@@ -42,4 +42,5 @@ def breaklsb(n):
     
     
 breaklsb(2743)
+breaklsb(12345)
     
