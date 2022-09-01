@@ -24,4 +24,6 @@
    <p> Reverse the linked dicitonary </p>
 
 ## Usage
-` ./main.c '
+- Compile using
+ <p> 'gcc -Wall - o main main.c ` </p>
+ 
