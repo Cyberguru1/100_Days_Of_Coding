@@ -63,7 +63,7 @@ class linkedlist():
             
     def reverse(self):
         itrate = self.head
-        prevv = self.tail
+        prevv = None
 
         while itrate:
             currt = itrate
@@ -106,8 +106,12 @@ llk.addNode(30, 1)
 llk.addNode(40, 1)
 llk.addNode(11, 1)
 llk.addNode(5,1)
+print("before reverse\n")
+llk.display()
 #llk.deletnode(3)
 llk.reverse()
+print("after reverse\n")
+
 #llk.sort()
 llk.display()
 
