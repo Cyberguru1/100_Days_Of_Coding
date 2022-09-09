@@ -3,7 +3,6 @@
 # @2022 
 
 from typing import Any
-from xxlimited import Null
 
 
 class Node:
@@ -147,8 +146,19 @@ class DoubleLLk():
             print("list is empty")
 
         else:
-            nextnode  = None
-            
+            prevNode = None
+            nextnode = tempnode.next
+            currentnode = tempnode
+            self.tail = self.head
+            while tempnode:
+                currentnode = tempnode
+                nextnode = currentnode.next
+                currentnode.next = prevNode
+                currentnode.prev = nextnode
+                prevNode = currentnode
+                tempnode = nextnode
+            self.head = prevNode
+            print("reversed sucessfully")
 
 
               
@@ -157,16 +167,34 @@ class DoubleLLk():
 
 Dll = DoubleLLk()
 Dll.addNode(1,1)
-Dll.addNode(1,0)
+Dll.addNode(6,1)
 Dll.addNode(2,1)
-Dll.addNode(3,0)
-Dll.addNode(4,2)
+Dll.addNode(3,1)
+Dll.addNode(4,1)
+print(' <=> '.join([str(node) for  node in Dll.traverse_forward()]))
+print(' <=> '.join([str(node) for node in Dll.traverse_reverse()]))
+print([node.data for node in Dll])
+print('\n')
+##in forward order with 5 elements
+#1 <=> 6 <=> 2 <=> 3 <=> 4
+#in reverse order with 5 elements
+#4 <=> 3 <=> 2 <=> 6 <=> 1
+#[1, 6, 2, 3, 4]
 
-
+print("Reversing the list")
+Dll.reverseDll()
 
 print(' <=> '.join([str(node) for  node in Dll.traverse_forward()]))
-
 print(' <=> '.join([str(node) for node in Dll.traverse_reverse()]))
+##output##
+#reversed sucessfully
+#in forward order with 5 elements
+#4 <=> 3 <=> 2 <=> 6 <=> 1
+#in reverse order with 5 elements
+#1 <=> 6 <=> 2 <=> 3 <=> 4
+#[4, 3, 2, 6, 1]
+
+
 Dll.deltenode(1)
 print([node.data for node in Dll])
 print(Dll.searchNode(4))

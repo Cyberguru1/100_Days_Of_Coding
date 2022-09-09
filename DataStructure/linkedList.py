@@ -71,7 +71,7 @@ class linkedlist():
             currt.next = prevv
             prevv = currt
             itrate = nextnode
-        self.head = prevv
+        self.head = currt
 
     def sort(self):
         while True:
