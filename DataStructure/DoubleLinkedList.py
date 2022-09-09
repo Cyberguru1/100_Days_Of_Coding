@@ -2,6 +2,10 @@
 # written by cyberguru1
 # @2022 
 
+from typing import Any
+from xxlimited import Null
+
+
 class Node:
     def __init__(self,data):
         self.data = data
@@ -13,11 +17,12 @@ class DoubleLLk():
         self.head = None
         self.tail = None
         self.NoElement = 0
+
     def __iter__(self):
         tempNode = self.head
         while tempNode:
             yield tempNode
-            tempNode = tempNode.next
+            tempNode = tempNode.next 
 
     #adding element with pos to the list
     def addNode(self, data, pos):
@@ -66,14 +71,15 @@ class DoubleLLk():
         print(f'in forward order with {self.NoElement} elements')
 
     #traversing the list in reverse manner starting from the tail
-    def traverse_reverse(self):
+    def traverse_reverse(self) -> Any:
         pointer = self.tail
         while pointer:
             yield pointer.data
             pointer = pointer.prev
         print(f'in reverse order with {self.NoElement} elements')
-
-    def deltenode(self, pos):
+        
+    #delete a given node
+    def deltenode(self, pos)-> None:
         if self.head == None : print("list is empty")
         if pos == 0:
             if self.head == self.tail:
@@ -104,7 +110,23 @@ class DoubleLLk():
             tempnode.next = delnode.next
             delnode.next.prev = tempnode
 
-    def searchNode(self, nodedata):
+    #delete all element in a double linked list
+    def deleteDLL(self) -> None:
+        if self.head == None:
+            print("list is empty")
+
+        else:
+            tempnode = self.head
+
+            while tempnode:
+                tempnode.prev = None
+                tempnode = tempnode.next
+
+            self.head = None
+            self.tail = None
+            print("linked list deleted sucessfully!")
+
+    def searchNode(self, nodedata) -> Any:
         if self.head == None : print("Double linked list is empty")
         if self.head.data == nodedata:
             return(nodedata)
@@ -117,7 +139,18 @@ class DoubleLLk():
                     return(nodedata)
                 tempnode = tempnode.next
         return "does not exsist in the list"
-        
+
+    def reverseDll(self) -> None:
+        tempnode = self.head
+
+        if tempnode == None:
+            print("list is empty")
+
+        else:
+            nextnode  = None
+            
+
+
               
 
 
