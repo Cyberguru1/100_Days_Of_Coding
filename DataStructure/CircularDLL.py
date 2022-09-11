@@ -1,8 +1,4 @@
-
-
-
 from typing import Any
-
 
 class Node(object):
     def __init__(self, value = None) -> Any:
@@ -28,7 +24,6 @@ class CircularDLL(object):
         self.tail = newnode
 
     def insert(self, value, pos = None):
-
         newnode = Node(value)
 
         #check if this is the first time of adding data to the list
@@ -62,6 +57,15 @@ class CircularDLL(object):
                 newnode.prev = pointer
                 newnode.next = nextnode
                 nextnode.prev = newnode
+
+    def traverse_Forward(self):
+        pass
+    def traverse_reverse(self):
+        pass
+    def DeleteNode(self):
+        pass
+    def reverse(self):
+        pass
 
 CDLL = CircularDLL()
 CDLL.CreateCDLL(0)
