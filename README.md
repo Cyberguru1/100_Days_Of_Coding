@@ -1,21 +1,25 @@
 # 100_Days_Of_Coding
 ## Day 1:
-> DataStructure
-- implemented linked list with python
+> **DataStructure**
+- [python_LinkedList](DataStructure/linkedList.py)
 ## Day 2:
-> DataStructure
-- implemented linked Dictionary with key value pair in C
+> **DataStructure**
+- [linked_dict](DataStructure/%20linkedDict_in_C/)
 ## Day 3:
-> DataStructure
-- implemented Double linked List with python
+> **DataStructure**
+- [double_linkedlist](DataStructure/DoubleLinkedList.py)
 ## Day 4:
-> DataStructure
-- implemented Circular Single linked List with python
-> Alogrithms
-- finding some of number in a list using recursion
+> **DataStructure**
+- [circular_linkdedlist](DataStructure/CircularDLL.py)
+> **Alogrithms**
+- [recursive_sum](ALGOS/recursions/sum_of_list.py)
 ## Day 5:
-> DataStructure
-- Added more function to Double linked list:
+> **DataStructure**
+> [Operation_on linked list](DataStructure/DoubleLinkedList.py)
 1. traverse through the linked list to search for a value
-2. traverse the double linked list in foward and reverse manner
+2. traverse the double linked list in foward and reverse
 3. implemented a deletion function
+## Day 6:
+> **Algorithms**
+> [Selection_sort](ALGOS/selection_sort.c)
+> 
