@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.systemdMinimal
     pkgs.python38Full
   ];
   env = {
