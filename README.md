@@ -24,3 +24,7 @@
 > 
 > [**Selection_sort in C**](ALGOS/selection_sort.c)
 > 
+## Day 7:
+> **Algorithms**
+1. implementation of insertion sort with python> 
+> [**Insertion_sort in python**](ALGOS/insertion_sort.py)
