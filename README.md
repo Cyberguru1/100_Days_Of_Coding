@@ -28,3 +28,7 @@
 > **Algorithms**
 1. implementation of insertion sort with python> 
 > [**Insertion_sort in python**](ALGOS/insertion_sort.py)
+## Day 8:
+> **Algorithms**
+1. implementation of bubble sort with python >
+2. [**Bubble_sort in python**](ALGOS/bubble_sort.py)
