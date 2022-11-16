@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+""" Admindroid list operation"""
 
 def printArray(array:[int]) -> int:
     """
