@@ -38,7 +38,7 @@
 2. [**admindroid_array**](ALGOS/admindroid_array.py)
 ## Day 10:
 > **Algorithms**
-1. Biggest sum
+1. [Biggest sum](ALGOS/biggest_sum.py)
   > Description:``` Given an integer N, return the smallest integer greater than N, sum of whose digists is twice as big as the sum of digits of N,
   Examples:
   - 1.Given N = 14, the function should return 19
@@ -46,4 +46,3 @@
   - 2.Given N = 99, the function should return 9999.
   codility challenge
   ```
-2. [**biggest sum**](ALGOS/biggest_sum.py)
