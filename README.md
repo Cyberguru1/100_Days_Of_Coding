@@ -39,9 +39,11 @@
 ## Day 10:
 > **Algorithms**
 1. Biggest sum
-  Description:``` Given an integer N, return the smallest integer greater than N, sum of whose digists is twice as big as the sum of digits of N,
+  > Description:``` Given an integer N, return the smallest integer greater than N, sum of whose digists is twice as big as the sum of digits of N,
   Examples:
-  1.Given N = 14, the function should return 19, The sum of digits of 19(1 + 9 = 10) is twice as big as sum of digits of 14(1 + 4 = 5).
-  2.Given N = 99, the function should return 9999.
-  codility challenge```
+  - 1.Given N = 14, the function should return 19
+   The sum of digits of 19(1 + 9 = 10) is twice as big as sum of digits of 14(1 + 4 = 5).
+  - 2.Given N = 99, the function should return 9999.
+  codility challenge
+  ```
 2. [**biggest sum**](ALGOS/biggest_sum.py)
